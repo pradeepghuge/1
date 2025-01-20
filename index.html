@@ -570,6 +570,44 @@
 </head>
 <body>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to toggle content visibility and icon rotation
+        function toggleItem(item, questionClass, answerClass) {
+            const question = item.querySelector(questionClass);
+            const answer = item.querySelector(answerClass);
+
+            if (question && answer) {
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            }
+        }
+
+         // FAQ Section
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            if (question) {
+                 question.addEventListener('click', () => toggleItem(item,'.faq-question','.faq-answer'));
+
+            }
+        });
+
+       // Why Choose Us Section
+       const whyChooseItems = document.querySelectorAll('.why-choose-item');
+        whyChooseItems.forEach(item => {
+            const title = item.querySelector('.why-choose-title');
+            if(title){
+              title.addEventListener('click',() => toggleItem(item, '.why-choose-title','.why-choose-content'))
+            }
+        });
+
+
+    });
+
+</script>
+
+
 <!-- Header -->
 <header>
     <div class="container">
