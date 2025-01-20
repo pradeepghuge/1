@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dr. Ghuge's Dental Clinic & Implant Center - Expert Dental Care in Pimpri-Chinchwad</title>
-    <meta name="description" content="Experience exceptional dental care at Dr. Ghuge's Dental Clinic & Implant Center in Pimpri-Chinchwad. We offer a wide range of services, including general dentistry, root canals, dental implants, cosmetic dentistry, and orthodontics.">
-
+     <meta name="description" content="Experience exceptional dental care at Dr. Ghuge's Dental Clinic & Implant Center in Pimpri-Chinchwad. We offer a wide range of services, including general dentistry, root canals, dental implants, cosmetic dentistry, and orthodontics. Schedule your consultation today!">
+   
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://icons8.com/icon/14868/tooth"> <!-- Replace with your actual favicon path -->
+    <link rel="icon" type="image/png" href="https://www.favicon.cc/logo3d/198711.png">
 
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Dr. Ghuge's Dental Clinic & Implant Center">
     <meta property="og:description" content="Experience expert dental care in Pimpri-Chinchwad. Offering implants, cosmetic dentistry & more.">
-    <meta property="og:image" content="https://icons8.com/icon/14868/tooth"> <!-- Replace with your actual social share image path -->
+    <meta property="og:image" content="https://www.favicon.cc/logo3d/198711.png">
     <meta property="og:url" content="https://yourdomain.com"> <!-- Replace with your actual website URL -->
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dr. Ghuge's Dental Clinic & Implant Center">
     <meta name="twitter:description" content="Experience expert dental care in Pimpri-Chinchwad. Offering implants, cosmetic dentistry & more.">
-    <meta name="twitter:image" content="images/social-share-image.jpg"> <!-- Replace with your actual social share image path -->
+    <meta name="twitter:image" content="https://www.favicon.cc/logo3d/198711.png"> <!-- Replace with your actual social share image path -->
 
     <!-- Google Fonts - Montserrat for a modern feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,7 +130,7 @@
             opacity: 0.95; /* Slightly reduce opacity on hover */
         }
 
-        section:nth-child(even) {
+         section:nth-child(even) {
             background-color: #fff;
         }
 
@@ -212,6 +212,70 @@
 
         #overview #google-map:hover {
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+        }
+
+         /* FAQ and Why Choose Us Styles */
+        .faq-container, .why-choose-container {
+            margin-top: 30px;
+        }
+        
+         .faq-item, .why-choose-item {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+             transition: box-shadow 0.3s ease;
+
+        }
+        .faq-item:hover , .why-choose-item:hover{
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .faq-question, .why-choose-title {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+             transition: background-color 0.3s ease;
+            border-bottom: 1px solid #e9ecef;
+        }
+          .faq-question:hover, .why-choose-title:hover{
+             background-color: #e9ecef;
+         }
+
+        .faq-question h3, .why-choose-title h3{
+            font-size: 1.2em;
+            margin: 0;
+            font-weight: 600;
+             color: #343a40;
+        }
+
+        .faq-question i, .why-choose-title i {
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+             color: #007bff;
+        }
+
+         .faq-question.active i,  .why-choose-title.active i {
+             transform: rotate(180deg);
+        }
+        .faq-answer, .why-choose-content{
+            padding: 20px;
+            background-color: #fff;
+            display: none;
+        }
+
+         .faq-answer p,  .why-choose-content p {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #495057;
+         }
+          .faq-answer.active, .why-choose-content.active {
+            display: block;
         }
 
         /* Services Section */
@@ -480,7 +544,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .review-item {
+             .review-item {
                 min-width: 80%;
             }
         }
@@ -506,127 +570,245 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <i class="fas fa-tooth logo-icon"></i>
-            <h1>Dr. Ghuge's Dental Clinic & Implant Center</h1>
-            <p>Elevating Smiles, Redefining Dental Excellence in Pimpri-Chinchwad</p>
-        </div>
-    </header>
+<!-- Header -->
+<header>
+    <div class="container">
+        <i class="fas fa-tooth logo-icon"></i>
+        <h1>Dr. Ghuge's Dental Clinic & Implant Center</h1>
+        <p>Elevating Smiles, Redefining Dental Excellence in Pimpri-Chinchwad</p>
+    </div>
+</header>
 
-    <!-- Overview Section -->
-    <section id="overview">
+<!-- Overview Section -->
+<section id="overview">
+    <div class="container">
+        <h2>Welcome to Dr. Ghuge's Dental Clinic</h2>
+        <p>Experience top-tier dental care in a comfortable and modern environment. We are dedicated to providing you and your family with comprehensive dental services, from routine check-ups to advanced procedures.</p>
+        <div class="overview-content">
+            <div class="overview-text">
+                <h3>Our Commitment</h3>
+                <p>At Dr. Ghuge's Dental Clinic & Implant Center, your oral health is our top priority. We believe in a patient-centered approach, where your concerns and goals are carefully considered in every treatment plan. Our team of experienced professionals is committed to providing gentle, effective, and state-of-the-art dental care.</p>
+                <p>We utilize the latest technology and techniques to ensure you receive the best possible outcomes. Whether you need a simple cleaning or a complex implant procedure, you can trust us to deliver exceptional results with a focus on your comfort and satisfaction.</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Shop No. 14, A-Wing, Om Sai Market, 411019, Chikhali Akurdi Rd, Krishna Nagar, Sector No. 20, Pimpri-Chinchwad, Maharashtra</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919960309718">+91 99603 09718</a></p>
+                    <p><i class="fas fa-clock"></i> Monday - Saturday: 9:30 AM - 7:00 PM</p>
+                </div>
+            </div>
+            <div class="overview-map">
+                <div id="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.140410828104!2d73.7967994743423!3d18.66811888248432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b7e8c72b13bb%3A0xd271dd1123785c35!2sDr.+Ghuge's+Dental+Clinic+and+Implant+Center!5e0!3m2!1sen!2sin!4v1715776878967!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+           <!-- FAQ Section -->
+         <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+             <p>Find answers to common questions about our services and procedures.</p>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are your clinic's hours of operation?</h3>
+                     <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                   <p>Our clinic is open Monday to Saturday from 9:30 AM to 7:00 PM. We are closed on Sundays.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer financing options for dental procedures?</h3>
+                    <i class="fas fa-plus"></i>
+                 </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer various financing options to make dental care more affordable. Please contact our office for details.</p>
+                </div>
+            </div>
+             <div class="faq-item">
+                 <div class="faq-question">
+                    <h3>What types of payment do you accept?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+               <div class="faq-answer">
+                   <p>We accept cash, credit cards, and debit cards for your convenience. </p>
+               </div>
+            </div>
+              <div class="faq-item">
+                  <div class="faq-question">
+                        <h3>How often should I visit the dentist for a check-up?</h3>
+                    <i class="fas fa-plus"></i>
+                 </div>
+                  <div class="faq-answer">
+                     <p>It is generally recommended to visit the dentist for a check-up and cleaning every six months for optimal oral health.</p>
+                  </div>
+              </div>
+                <div class="faq-item">
+                  <div class="faq-question">
+                      <h3>Do you offer emergency dental services?</h3>
+                      <i class="fas fa-plus"></i>
+                </div>
+                 <div class="faq-answer">
+                       <p>Yes, we provide emergency dental services. Please call our clinic as soon as possible during our operating hours for any dental emergencies.</p>
+                 </div>
+              </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Dr. Ghuge</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Your Trusted Dental Expert</h3>
+                 <p>Dr. Pradeep Ghuge is a highly skilled and compassionate dentist with 14 years of experience in providing exceptional dental care. He is dedicated to staying at the forefront of dental advancements to offer his patients the most effective and comfortable treatments.</p>
+                <p>With a strong commitment to continuing education, Dr. Ghuge regularly participates in workshops and courses to enhance his expertise in various fields of dentistry, including implantology, cosmetic dentistry, and orthodontics. His patient-centric approach ensures that each individual receives personalized care tailored to their specific needs and desires.</p>
+                <p>Dr. Ghuge believes in building lasting relationships with his patients based on trust and open communication. He takes the time to listen to your concerns, explain treatment options thoroughly, and empower you to make informed decisions about your oral health.</p>
+             </div>
+            <div class="about-image">
+                <img src="https://content.jdmagicbox.com/comp/pune/v5/020pxx20.xx20.170810163002.k6v5/catalogue/dr-pradeep-ghuge-dr-ghuges-dental-clinic-and-implant-center--chinchwad-east-pune-dentists-1UOtGLavfB-250.jpg" alt="Dr. Pradeep Ghuge" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h2>Our Comprehensive Dental Services</h2>
+        <p>We offer a wide array of dental services to cater to all your oral health needs. Our services are performed with precision and care, utilizing the latest dental technology.</p>
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-tooth"></i>
+                <h3>General Dentistry</h3>
+                <p>Regular check-ups, cleanings, fillings, extractions, and preventive care to maintain your oral health.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-syringe"></i>
+                <h3>Root Canal Treatment</h3>
+                <p>Expert care to treat infected teeth, relieve pain, and save your natural tooth.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-implants"></i>
+                <h3>Dental Implants</h3>
+                <p>Permanent solutions for missing teeth, restoring function and aesthetics.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-smile"></i>
+                <h3>Cosmetic Dentistry</h3>
+                <p>Teeth whitening, veneers, and smile makeovers to enhance the beauty of your smile.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-brackets-curly"></i>
+                <h3>Orthodontics</h3>
+                <p>Solutions for misaligned teeth and jaws, including braces and clear aligners.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-tooth"></i>
+                <h3>Teeth Whitening</h3>
+                <p>Brighten your smile with our safe and effective teeth whitening procedures.</p>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
         <div class="container">
-            <h2>Welcome to Dr. Ghuge's Dental Clinic</h2>
-            <p>Experience top-tier dental care in a comfortable and modern environment. We are dedicated to providing you and your family with comprehensive dental services, from routine check-ups to advanced procedures.</p>
-            <div class="overview-content">
-                <div class="overview-text">
-                    <h3>Our Commitment</h3>
-                    <p>At Dr. Ghuge's Dental Clinic & Implant Center, your oral health is our top priority. We believe in a patient-centered approach, where your concerns and goals are carefully considered in every treatment plan. Our team of experienced professionals is committed to providing gentle, effective, and state-of-the-art dental care.</p>
-                    <p>We utilize the latest technology and techniques to ensure you receive the best possible outcomes. Whether you need a simple cleaning or a complex implant procedure, you can trust us to deliver exceptional results with a focus on your comfort and satisfaction.</p>
-                    <div class="contact-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Shop No. 14, A-Wing, Om Sai Market, 411019, Chikhali Akurdi Rd, Krishna Nagar, Sector No. 20, Pimpri-Chinchwad, Maharashtra</p>
-                        <p><i class="fas fa-phone"></i> <a href="tel:+919960309718">+91 99603 09718</a></p>
-                        <p><i class="fas fa-clock"></i> Monday - Saturday: 9:30 AM - 7:00 PM</p>
+             <h2>Why Choose Dr. Ghuge's Dental Clinic?</h2>
+            <p>Discover the reasons why our patients trust us for their dental care.</p>
+            <div class="why-choose-container">
+                <div class="why-choose-item">
+                    <div class="why-choose-title">
+                        <h3>Experienced and Compassionate Dentist</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <p>Dr. Pradeep Ghuge is a highly skilled and experienced dentist who genuinely cares about his patients' well-being.</p>
                     </div>
                 </div>
-                <div class="overview-map">
-                    <div id="google-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.140410828104!2d73.7967994743423!3d18.66811888248432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b7e8c72b13bb%3A0xd271dd1123785c35!2sDr.+Ghuge's+Dental+Clinic+and+Implant+Center!5e0!3m2!1sen!2sin!4v1715776878967!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="why-choose-item">
+                    <div class="why-choose-title">
+                         <h3>Comprehensive Range of Services</h3>
+                         <i class="fas fa-plus"></i>
+                   </div>
+                    <div class="why-choose-content">
+                         <p>We offer a wide array of dental services, from general dentistry to advanced procedures like implants and orthodontics.</p>
+                     </div>
+                 </div>
+                 <div class="why-choose-item">
+                    <div class="why-choose-title">
+                        <h3>State-of-the-Art Technology</h3>
+                        <i class="fas fa-plus"></i>
+                     </div>
+                    <div class="why-choose-content">
+                        <p>We utilize the latest dental technology and techniques to ensure precise and comfortable treatments.</p>
                     </div>
                 </div>
+                 <div class="why-choose-item">
+                     <div class="why-choose-title">
+                         <h3>Personalized Treatment Plans</h3>
+                           <i class="fas fa-plus"></i>
+                     </div>
+                    <div class="why-choose-content">
+                        <p>Our patient-centered approach means every treatment plan is carefully customized to meet your individual needs and goals.</p>
+                    </div>
+                 </div>
+                   <div class="why-choose-item">
+                       <div class="why-choose-title">
+                           <h3>Comfortable and Modern Environment</h3>
+                            <i class="fas fa-plus"></i>
+                       </div>
+                        <div class="why-choose-content">
+                           <p>Our clinic provides a relaxing and welcoming atmosphere for all our patients.</p>
+                       </div>
+                   </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Dr. Ghuge</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Your Trusted Dental Expert</h3>
-                    <p>Dr. Pradeep Ghuge is a highly skilled and compassionate dentist with 14 years of experience in providing exceptional dental care. He is dedicated to staying at the forefront of dental advancements to offer his patients the most effective and comfortable treatments.</p>
-                    <p>With a strong commitment to continuing education, Dr. Ghuge regularly participates in workshops and courses to enhance his expertise in various fields of dentistry, including implantology, cosmetic dentistry, and orthodontics. His patient-centric approach ensures that each individual receives personalized care tailored to their specific needs and desires.</p>
-                    <p>Dr. Ghuge believes in building lasting relationships with his patients based on trust and open communication. He takes the time to listen to your concerns, explain treatment options thoroughly, and empower you to make informed decisions about your oral health.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://content.jdmagicbox.com/comp/pune/v5/020pxx20.xx20.170810163002.k6v5/catalogue/dr-pradeep-ghuge-dr-ghuges-dental-clinic-and-implant-center--chinchwad-east-pune-dentists-1UOtGLavfB-250.jpg" alt="Dr. Pradeep Ghuge" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Comprehensive Dental Services</h2>
-            <p>We offer a wide array of dental services to cater to all your oral health needs. Our services are performed with precision and care, utilizing the latest dental technology.</p>
-            <div class="services-grid">
-                <div class="service-item">
-                    <i class="fas fa-tooth"></i>
-                    <h3>General Dentistry</h3>
-                    <p>Regular check-ups, cleanings, fillings, extractions, and preventive care to maintain your oral health.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-syringe"></i>
-                    <h3>Root Canal Treatment</h3>
-                    <p>Expert care to treat infected teeth, relieve pain, and save your natural tooth.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-implants"></i>
-                    <h3>Dental Implants</h3>
-                    <p>Permanent solutions for missing teeth, restoring function and aesthetics.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-smile"></i>
-                    <h3>Cosmetic Dentistry</h3>
-                    <p>Teeth whitening, veneers, and smile makeovers to enhance the beauty of your smile.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-brackets-curly"></i>
-                    <h3>Orthodontics</h3>
-                    <p>Solutions for misaligned teeth and jaws, including braces and clear aligners.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-tooth"></i>
-                    <h3>Teeth Whitening</h3>
-                    <p>Brighten your smile with our safe and effective teeth whitening procedures.</p>
-                </div>
+<!-- Reviews Section -->
+<section id="reviews">
+    <div class="container">
+        <h2>What Our Patients Say</h2>
+        <p>Don't just take our word for it. Hear from our satisfied patients about their experiences at Dr. Ghuge's Dental Clinic & Implant Center.</p>
+        <div class="reviews-carousel">
+            <div class="review-item">
+                <p class="quote">"Dr. Ghuge is an exceptional dentist who truly cares about his patients. From the moment I walked in, I felt at ease. His expertise and professionalism are top-notch."</p>
+                <p class="author">Pravin Pawar</p>
+                <p class="rating">★★★★★</p>
             </div>
+            <div class="review-item">
+                <p class="quote">"I underwent a root canal treatment here. The experience was pleasant, and the team was professional and caring throughout the process."</p>
+                <p class="author">Kishor Kokate</p>
+                <p class="rating">★★★★★</p>
+            </div>
+            <div class="review-item">
+                <p class="quote">"Excellent care with great attention to detail. Dr. Pradeep is highly skilled and patient, and the team made sure I was comfortable throughout my treatment."</p>
+                <p class="author">Pramod Rewade</p>
+                <p class="rating">★★★★★</p>
+            </div>
+             <div class="review-item">
+                <p class="quote">"The clinic is very clean and the staff are friendly. I had a great experience with my dental cleaning."</p>
+                <p class="author">Sneha Patel</p>
+                <p class="rating">★★★★★</p>
+             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Reviews Section -->
-    <section id="reviews">
-        <div class="container">
-            <h2>What Our Patients Say</h2>
-            <p>Don't just take our word for it. Hear from our satisfied patients about their experiences at Dr. Ghuge's Dental Clinic & Implant Center.</p>
-            <div class="reviews-carousel">
-                <div class="review-item">
-                    <p class="quote">"Dr. Ghuge is an exceptional dentist who truly cares about his patients. From the moment I walked in, I felt at ease. His expertise and professionalism are top-notch."</p>
-                    <p class="author">Pravin Pawar</p>
-                    <p class="rating">★★★★★</p>
-                </div>
-                <div class="review-item">
-                    <p class="quote">"I underwent a root canal treatment here. The experience was pleasant, and the team was professional and caring throughout the process."</p>
-                    <p class="author">Kishor Kokate</p>
-                    <p class="rating">★★★★★</p>
-                </div>
-                <div class="review-item">
-                    <p class="quote">"Excellent care with great attention to detail. Dr. Pradeep is highly skilled and patient, and the team made sure I was comfortable throughout my treatment."</p>
-                    <p class="author">Pramod Rewade</p>
-                    <p class="rating">★★★★★</p>
-                </div>
-                <div class="review-item">
-                    <p class="quote">"The clinic is very clean and the staff are friendly. I had a great experience with my dental cleaning."</p>
-                    <p class="author">Sneha Patel</p>
-                    <p class="rating">★★★★★</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Schedule Your Appointment Today</h2>
+        <p>Take the first step towards a healthier, brighter smile. Contact us to schedule your consultation or appointment.</p>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our Address</h3>
+                 <p>Shop No. 14, A-Wing, Om Sai Market, 411019, Chikhali Akurdi Rd, Krishna Nagar, Sector No. 20, Pimp
 
     <!-- Contact Section -->
     <section id="contact">
