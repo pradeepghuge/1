@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dr. Ghuge's Dental Clinic & Implant Center - Expert Dental Care in Pimpri-Chinchwad</title>
+    <meta name="description" content="Experience exceptional dental care at Dr. Ghuge's Dental Clinic & Implant Center in Pimpri-Chinchwad. We offer a wide range of services, including general dentistry, root canals, dental implants, cosmetic dentistry, and orthodontics.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png"> <!-- Replace with your actual favicon path -->
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Dr. Ghuge's Dental Clinic & Implant Center">
+    <meta property="og:description" content="Experience expert dental care in Pimpri-Chinchwad. Offering implants, cosmetic dentistry & more.">
+    <meta property="og:image" content="images/social-share-image.jpg"> <!-- Replace with your actual social share image path -->
+    <meta property="og:url" content="https://yourdomain.com"> <!-- Replace with your actual website URL -->
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dr. Ghuge's Dental Clinic & Implant Center">
+    <meta name="twitter:description" content="Experience expert dental care in Pimpri-Chinchwad. Offering implants, cosmetic dentistry & more.">
+    <meta name="twitter:image" content="images/social-share-image.jpg"> <!-- Replace with your actual social share image path -->
+
+    <!-- Google Fonts - Montserrat for a modern feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9; /* Light, modern background */
+            color: #343a40; /* Darker, readable text */
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transition: background-color 0.3s ease; /* Add transition for body background */
+        }
+
+        body:hover {
+            background-color: #e9ecef; /* Subtle background change on overall hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3; /* Darken link color on hover */
+        }
+
+        /* Reusable Container */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: #ffffff; /* Clean white header */
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            background-image: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8)), url('images/header-bg.jpg'); /* Replace with your header image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease; /* Add transition for header */
+        }
+
+        header:hover {
+            transform: scale(1.02); /* Slight scale up on hover */
+        }
+
+        header:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(to top, #f4f7f9, transparent); /* Soft fade at the bottom */
+            z-index: 1;
+        }
+
+        header .logo-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #fff;
+            transition: transform 0.3s ease; /* Add transition for logo */
+        }
+
+        header .logo-icon:hover {
+            transform: rotate(15deg); /* Rotate logo on hover */
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin: 0;
+            font-weight: 500;
+            color: #eee;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+            transition: opacity 0.3s ease; /* Add transition for section */
+        }
+
+        section:hover {
+            opacity: 0.95; /* Slightly reduce opacity on hover */
+        }
+
+        section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        section h2 {
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #007bff;
+            position: relative;
+            font-weight: 700;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #007bff;
+            transition: width 0.3s ease; /* Add transition for underline */
+        }
+
+        section h2:hover::after {
+            width: 120px; /* Extend underline on hover */
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        /* Overview Section */
+        #overview .overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        #overview .overview-text h3 {
+            font-size: 1.8em;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        #overview .overview-text p {
+            text-align: justify;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+
+        #overview .contact-details {
+            margin-top: 30px;
+        }
+
+        #overview .contact-details p {
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #495057;
+        }
+
+        #overview .contact-details i {
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        #overview #google-map {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            transition: box-shadow 0.3s ease; /* Add transition for map */
+        }
+
+        #overview #google-map:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-item {
+            background-color: #fff;
+            padding: 40px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item i {
+            font-size: 3em;
+            color: #007bff;
+            margin-bottom: 20px;
+            transition: color 0.3s ease; /* Add transition for icon color */
+        }
+
+        .service-item:hover i {
+            color: #0056b3; /* Darken icon color on hover */
+        }
+
+        .service-item h3 {
+            font-size: 1.5em;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .service-item p {
+            font-size: 1em;
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 0;
+        }
+
+        /* About Us Section */
+        #about {
+            background-color: #f8f9fa;
+        }
+
+        #about .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        #about .about-text h3 {
+            font-size: 2.2em;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        #about .about-text p {
+            text-align: justify;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        #about .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Add transition for image */
+        }
+
+        #about .about-image img:hover {
+            transform: scale(1.05); /* Slightly scale up image on hover */
+        }
+
+        /* Reviews Section */
+        .reviews-carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 30px;
+            padding-bottom: 30px;
+        }
+
+        .review-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            min-width: 300px;
+            flex: 1;
+            transition: box-shadow 0.3s ease; /* Add transition for review item */
+        }
+
+        .review-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+        }
+
+        .review-item p.quote {
+            font-style: italic;
+            color: #495057;
+            margin-bottom: 20px;
+        }
+
+        .review-item p.author {
+            font-weight: 600;
+            color: #007bff;
+            text-align: right;
+            margin-bottom: 5px;
+        }
+
+        .review-item .rating {
+            color: #ffc107;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+        }
+
+        #contact h2 {
+            color: #fff;
+        }
+
+        #contact h2::after {
+            background-color: #fff;
+        }
+
+        #contact p {
+            color: #e0e0e0;
+            margin-bottom: 40px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .contact-info div {
+            text-align: center;
+            transition: transform 0.3s ease; /* Add transition for contact info */
+        }
+
+        .contact-info div:hover {
+            transform: scale(1.03); /* Slightly scale up on hover */
+        }
+
+        .contact-info i {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1em;
+            margin-bottom: 0;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: #fff;
+            color: #007bff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add more transitions */
+        }
+
+        .contact-button:hover {
+            background-color: #e0e0e0;
+            color: #0056b3; /* Darken text color on hover */
+            transform: scale(1.05); /* Scale up button on hover */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease; /* Add transition for footer */
+        }
+
+        footer:hover {
+            background-color: #495057; /* Slightly darken footer on hover */
+        }
+
+        footer p {
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Underline links in footer on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .container {
+                width: 90%;
+            }
+
+            header {
+                padding: 80px 20px;
+            }
+
+            header h1 {
+                font-size: 3em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            #overview .overview-content,
+            #about .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            #overview #google-map {
+                height: 350px;
+            }
+
+            #about .about-image {
+                order: -1; /* Move image above text on smaller screens */
+                margin-bottom: 30px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            section h2 {
+                font-size: 2.5em;
+                margin-bottom: 30px;
+            }
+
+            section p {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .review-item {
+                min-width: 80%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            #overview #google-map {
+                height: 300px;
+            }
+
+            section h2 {
+                font-size: 2.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <i class="fas fa-tooth logo-icon"></i>
+            <h1>Dr. Ghuge's Dental Clinic & Implant Center</h1>
+            <p>Elevating Smiles, Redefining Dental Excellence in Pimpri-Chinchwad</p>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <div class="container">
+            <h2>Welcome to Dr. Ghuge's Dental Clinic</h2>
+            <p>Experience top-tier dental care in a comfortable and modern environment. We are dedicated to providing you and your family with comprehensive dental services, from routine check-ups to advanced procedures.</p>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>Our Commitment</h3>
+                    <p>At Dr. Ghuge's Dental Clinic & Implant Center, your oral health is our top priority. We believe in a patient-centered approach, where your concerns and goals are carefully considered in every treatment plan. Our team of experienced professionals is committed to providing gentle, effective, and state-of-the-art dental care.</p>
+                    <p>We utilize the latest technology and techniques to ensure you receive the best possible outcomes. Whether you need a simple cleaning or a complex implant procedure, you can trust us to deliver exceptional results with a focus on your comfort and satisfaction.</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Shop No. 14, A-Wing, Om Sai Market, 411019, Chikhali Akurdi Rd, Krishna Nagar, Sector No. 20, Pimpri-Chinchwad, Maharashtra</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+919960309718">+91 99603 09718</a></p>
+                        <p><i class="fas fa-clock"></i> Monday - Saturday: 9:30 AM - 7:00 PM</p>
+                    </div>
+                </div>
+                <div class="overview-map">
+                    <div id="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120907.97036632257!2d73.7967995!3d18.6681189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1678384822588!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Dr. Ghuge</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Trusted Dental Expert</h3>
+                    <p>Dr. Pradeep Ghuge is a highly skilled and compassionate dentist with 14 years of experience in providing exceptional dental care. He is dedicated to staying at the forefront of dental advancements to offer his patients the most effective and comfortable treatments.</p>
+                    <p>With a strong commitment to continuing education, Dr. Ghuge regularly participates in workshops and courses to enhance his expertise in various fields of dentistry, including implantology, cosmetic dentistry, and orthodontics. His patient-centric approach ensures that each individual receives personalized care tailored to their specific needs and desires.</p>
+                    <p>Dr. Ghuge believes in building lasting relationships with his patients based on trust and open communication. He takes the time to listen to your concerns, explain treatment options thoroughly, and empower you to make informed decisions about your oral health.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://content.jdmagicbox.com/comp/pune/v5/020pxx20.xx20.170810163002.k6v5/catalogue/dr-pradeep-ghuge-dr-ghuges-dental-clinic-and-implant-center--chinchwad-east-pune-dentists-1UOtGLavfB-250.jpg" alt="Dr. Pradeep Ghuge" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Comprehensive Dental Services</h2>
+            <p>We offer a wide array of dental services to cater to all your oral health needs. Our services are performed with precision and care, utilizing the latest dental technology.</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-tooth"></i>
+                    <h3>General Dentistry</h3>
+                    <p>Regular check-ups, cleanings, fillings, extractions, and preventive care to maintain your oral health.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-syringe"></i>
+                    <h3>Root Canal Treatment</h3>
+                    <p>Expert care to treat infected teeth, relieve pain, and save your natural tooth.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-implants"></i>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent solutions for missing teeth, restoring function and aesthetics.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-smile"></i>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Teeth whitening, veneers, and smile makeovers to enhance the beauty of your smile.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-brackets-curly"></i>
+                    <h3>Orthodontics</h3>
+                    <p>Solutions for misaligned teeth and jaws, including braces and clear aligners.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-tooth"></i>
+                    <h3>Teeth Whitening</h3>
+                    <p>Brighten your smile with our safe and effective teeth whitening procedures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <div class="container">
+            <h2>What Our Patients Say</h2>
+            <p>Don't just take our word for it. Hear from our satisfied patients about their experiences at Dr. Ghuge's Dental Clinic & Implant Center.</p>
+            <div class="reviews-carousel">
+                <div class="review-item">
+                    <p class="quote">"Dr. Ghuge is an exceptional dentist who truly cares about his patients. From the moment I walked in, I felt at ease. His expertise and professionalism are top-notch."</p>
+                    <p class="author">Pravin Pawar</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="review-item">
+                    <p class="quote">"I underwent a root canal treatment here. The experience was pleasant, and the team was professional and caring throughout the process."</p>
+                    <p class="author">Kishor Kokate</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="review-item">
+                    <p class="quote">"Excellent care with great attention to detail. Dr. Pradeep is highly skilled and patient, and the team made sure I was comfortable throughout my treatment."</p>
+                    <p class="author">Pramod Rewade</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="review-item">
+                    <p class="quote">"The clinic is very clean and the staff are friendly. I had a great experience with my dental cleaning."</p>
+                    <p class="author">Sneha Patel</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Schedule Your Appointment Today</h2>
+            <p>Take the first step towards a healthier, brighter smile. Contact us to schedule your consultation or appointment.</p>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Our Address</h3>
+                    <p>Shop No. 14, A-Wing, Om Sai Market, 411019, Chikhali Akurdi Rd, Krishna Nagar, Sector No. 20, Pimpri-Chinchwad, Maharashtra</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919960309718">+91 99603 09718</a></p>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@drghughesdentalclinic.com">info@drghughesdentalclinic.com</a></p>
+                </div>
+                <div>
+                    <i class="far fa-clock"></i>
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Saturday: 9:30 AM - 7:00 PM</p>
+                </div>
+            </div>
+            <a href="tel:+919960309718" class="contact-button"><i class="fas fa-phone-volume"></i> Call Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Dr. Ghuge's Dental Clinic and Implant Center | All Rights Reserved</p>
+            <p>Designed & Developed by Dr. pradeep Ghuge</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // The navigation highlighting script is no longer needed as there is no navigation
+    </script>
+
+</body>
+</html>
